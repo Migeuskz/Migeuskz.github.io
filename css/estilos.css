@@ -18,7 +18,8 @@ body {
 
 /* ----- ----- HEADER ----- ----- */
 header {
-  background: url("../img/bg.jpg"), #49A3D6;
+   background: url("../img/fondo.png" );
+  /* background-image: url("../img/jaker.gif"); */
   background-repeat: no-repeat;
   background-position: center;
   max-height: 600px; }
