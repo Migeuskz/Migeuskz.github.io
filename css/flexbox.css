@@ -300,6 +300,15 @@
         max-width: 100%;    /* Previene que el contenido exceda el ancho */
     }
 
+    body{
+        border: solid red 3px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .logo_celphone {
         display: block;
     }
@@ -309,7 +318,10 @@
     }
 
 
-
+    .contact{
+        border: green 3px solid;
+        width: 52%;
+    }
 }
 
 /* tablets */
