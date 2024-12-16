@@ -318,9 +318,28 @@
     }
 
     .skills{
-        border: green 3px solid;
         margin-top: 24rem;
-        width: 50%;
+    }
+
+    .skills_logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        gap: 1.5rem; /* Espacio entre elementos */
+        justify-items: center; /* Centra los elementos horizontalmente */
+        align-items: center;
+        width: 100%;
+        padding: 1rem; /* Ajuste de padding */
+    }
+
+    .skills_logo_tec {
+        height: 6.4rem; /* Tamaño más pequeño */
+        width: 6.4rem;
+        text-align: center;
+    }
+
+    .skills_logo_tec p {
+        font-size: 1rem; /* Reducción del tamaño del texto */
+        margin-top: 0.5rem;
     }
     
     .projects{
