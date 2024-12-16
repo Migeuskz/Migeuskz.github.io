@@ -294,6 +294,12 @@
 }
 
 @media (max-width: 480px) {
+
+    html, body {
+        overflow-x: hidden; /* Bloquea el scroll lateral */
+        max-width: 100%;    /* Previene que el contenido exceda el ancho */
+    }
+
     .logo_celphone {
         display: block;
     }
