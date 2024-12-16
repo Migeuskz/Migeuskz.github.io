@@ -317,11 +317,21 @@
         display: none;
     }
 
+    .skills{
+        /* border: green 3px solid; */
+        margin-top: 24rem;
+        width: 50%;
+    }
+    
+    .projects{
+        margin-top: 10rem;
+
+    }
 
     .contact{
-        /* border: green 3px solid; */
         width: 52%;
     }
+    
 
     .contact h3 {
         font-size: 2.8rem;
