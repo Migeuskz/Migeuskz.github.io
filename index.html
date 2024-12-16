@@ -1,150 +1,463 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Migeuskz</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Angel Web</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin:ital,wght@0,400..700;1,400..700&family=Maven+Pro:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Scrips -->
+    <script src="./js/app.js"></script>
 </head>
+
+
 <body>
-	<header>
-		<div class="contenedor">
-			<nav class="menu">
-				<a href="#acerca-de">Acerca de</a>
-				<a href="#trabajos">Trabajos</a>
-				<a href="#contacto">Contacto</a>
-			</nav>
-			
-			<div class="contenedor-texto">
-				<div class="texto">
-					<h1 class="nombre">Miguel Angel Sanchez Papalotzi</h1>
-					<h2 class="profesion">TIADSM 4to "A"</h2>
-				</div>
-			</div>
-		</div>
-	</header>
+    <header>
+        <nav class="content_navbar">
+            <img src="./assets/imgs/logoMigue(Vertical).png" alt="logo Miguel Angel Frontend" class="logo_desktop">
+            <img src="./assets/imgs/logoMiguev3MA.png" alt="logo Miguel Angel Frontend" class="logo_celphone">
+            <ul class="navbar">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#aboutMe">Acerca de mi</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <!-- <li><a href="#formacion">Formación</a></li> -->
+                <li><a href="#projects">Proyectos</a></li>
+                <!-- <li><a href="mailto:msanchezpapalotzi@gmail.com">Contacto</a></li> -->
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
 
-	<section class="main">
-		<section class="acerca-de" id="acerca-de">
-			<div class="contenedor">
-				<div class="foto">
-					<img src="img/jaker.png" width="115" height="115" alt="skz">
-				</div>
-			
-				<div class="texto">
-					<h3 class="titulo">Acerca de</h3>
-					<p>This is <span class="bold">Photoshop's version</span> of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis <span class="bold">bibendum auctor</span>, nisi elit consequat ipsum.</p>
-				</div>
-			</div>
-		</section>
-			
-		<section class="trabajos" id="trabajos">
-			<div class="contenedor">
-				<h3 class="titulo">Trabajos</h3>
-						
-				<div class="contenedor-trabajos">
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/1.jpg" alt="Lorem Ipsum">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/2.jpg" alt="Lorem Ipsum">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/3.jpg" alt="Lorem Ipsum">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/4.jpg" alt="Lorem Ipsum">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/5.jpg" alt="Lorem Ipsum">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/6.jpg" alt="Lorem Ipsum">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/7.jpg" alt="Lorem Ipsum">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/8.jpg" alt="Lorem Ipsum">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</section>
+            <!-- <button>Curriculum</button> -->
+        </nav>
+    </header>
 
-	<footer>
-		<div class="contenedor" id="contacto">
-			<section class="contacto">
-				<h3 class="titulo">Contacto</h3>
-				<form class="formulario" action="">
-					<input type="text" placeholder="Nombre" name="nombre" required>
-					<input type="email" placeholder="Correo" name="correo" required>
-					<textarea name="mensaje" placeholder="Mensaje:"></textarea>
-					<input class="boton" type="submit" value="Enviar">
-				</form>
-			</section>
-		</div>
-			
-		<section class="redes-sociales">
-			<div class="contenedor">
-				<a class="twitter" href="http://twitter.com/FranLop84" target="_blank"><i class="fa fa-twitter"></i></a>
-				<a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-				<a class="youtube" href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a>
-				<a class="github" href="http://www.github.com/franlop24" target="_blank"><i class="fa fa-github"></i></a>
-				<a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
-			</div>
-		</section>
-	</footer>
+    <main>
+
+        <!-- Inicio -->
+        <section id="inicio" class="inicio">
+
+            <div class="inicio_info">
+
+                <h1 class="robot_name">Hola!, Soy Miguel Angel Sanchez Papalotzi Desarrollador Front-end</h1>
+
+                <p>Convirtiendo ideas en experiencias interactivas y funcionales.</p>
+
+                <div class="inicio_botones">
+                    <a href="https://github.com/Migeuskz" target="_blank" class="gitHub">GitHub</a>
+                    <a href="https://github.com/Migeuskz" target="_blank" class="linkedIn">Curriculum</a>
+                    <!-- <a href="https://www.linkedin.com/in/miguel-papalotzi-devfrontend/" target="_blank"
+                        class="linkedIn">LinkedIn</a> -->
+                </div>
+            </div>
+
+
+            <!-- <iframe src='https://my.spline.design/prueba2-145eb8708626b2075d5fe6fec27ed760/' frameborder='0'
+                class="robot"></iframe> -->
+
+            <iframe src='https://my.spline.design/happyrobotbuttonprueba-1d5a1bd4135dc9b79de1ed198b0e56e1/'
+                frameborder='0' class='robot'></iframe>
+
+            <iframe src='https://my.spline.design/happyrobotpeque-eeaa75cef1702cc1d76d4dc81257f155/' frameborder='0'
+                class='robot_mobile'></iframe>
+
+            <!-- <iframe src='https://my.spline.design/prueba2peque-0749fa86f6f243f655863fbb13fc3e82/' frameborder='0'
+                class="robot_mobile"></iframe> -->
+
+        </section>
+
+        <!-- About me -->
+        <section id="aboutMe" class="aboutMe">
+            <img src="./assets/imgs/perfil.jpg" alt="Foto de perfil" class="aboutMe_foto">
+
+            <div class="aboutMe_info">
+                <h2 class="secciones">Acerca de mí:</h2>
+                <div class="aboutMe_foto_cellphone">
+                    <img src="./assets/imgs/perfil.jpg" alt="Foto de perfil">
+                    <!-- <img src="./assets/imgs/perfil.jpg" alt="Foto de perfil" class="aboutMe_foto_cellphone"> -->
+
+                </div>
+                <!-- <h3>Convertir ideas en experiencias interactivas y funcionales.</h3> -->
+                <p>
+                    Comencé mi trayectoria en el desarrollo Front-end durante una estancia de 4 meses (Mayo-Agosto
+                    2023),
+                    donde reforcé mis habilidades en la creación y mantenimiento de interfaces web. Hace un año, en la
+                    universidad, inicié mi especialización en Front-end utilizando el framework React, y desde entonces,
+                    he
+                    continuado perfeccionando mis conocimientos.
+                </p>
+                <br />
+                <p>
+                    Actualmente curso el décimo cuatrimestre de la Ingeniería en Desarrollo y Gestión de Software, y
+                    estoy
+                    enfocado en crecer como desarrollador web Front-end, mejorar mis habilidades en UX/UI, y explorar
+                    nuevas
+                    tecnologías que potencien mis proyectos.
+                </p>
+                <div class="about_botones">
+                    <a href="https://www.linkedin.com/in/miguel-papalotzi-devfrontend/" target="_blank"
+                        class="gitHub">LinkedIn</a>
+
+                    <a href="#contact" class="linkedIn">Contactame</a>
+                    <!-- <a href="mailto:msanchezpapalotzi@gmail.com" target="_blank" class="linkedIn">Contactame</a> -->
+                </div>
+                <!-- <div class="inicio_botones">
+                    <a href="https://www.linkedin.com/in/miguel-papalotzi-devfrontend/" target="_blank"
+                        class="gitHub">LinkedIn</a>
+
+                    <a href="#contact" class="linkedIn">Contactame</a>
+                    <!-- <a href="mailto:msanchezpapalotzi@gmail.com" target="_blank" class="linkedIn">Contactame</a> -->
+                </div> -->
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills">
+            <h2>Habilidades</h2>
+            <div class="skills_logo">
+
+                <div class="skills_logo_tec">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                        <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52"></path>
+                        <path fill="#ef652a" d="M226 472l149-41 35-394H226"></path>
+                        <path fill="#ecedee"
+                            d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"></path>
+                        <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"></path>
+                    </svg>
+                    <p>Html 5</p>
+
+                </div>
+
+
+                <div class="skills_logo_tec">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                        <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"></path>
+                        <path fill="#30a9dc" d="M226 472l149-41 35-394H226"></path>
+                        <path fill="#ecedee" d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z">
+                        </path>
+                        <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"></path>
+                    </svg>
+                    <p>CSS</p>
+
+                </div>
+
+                <div class="skills_logo_tec">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="0 0 1052 1052"
+                        class="logo_js">
+                        <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
+                        <path
+                            d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+                            fill="#323330" />
+                    </svg>
+                    <p>JavaScript</p>
+
+                </div>
+
+                <div class="skills_logo_tec">
+                    <svg viewBox="0 0 256 256" width="256" height="256" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid">
+                        <path
+                            d="M20 0h216c11.046 0 20 8.954 20 20v216c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20V20C0 8.954 8.954 0 20 0Z"
+                            fill="#3178C6" />
+                        <path
+                            d="M150.518 200.475v27.62c4.492 2.302 9.805 4.028 15.938 5.179 6.133 1.151 12.597 1.726 19.393 1.726 6.622 0 12.914-.633 18.874-1.899 5.96-1.266 11.187-3.352 15.678-6.257 4.492-2.906 8.048-6.704 10.669-11.394 2.62-4.689 3.93-10.486 3.93-17.391 0-5.006-.749-9.394-2.246-13.163a30.748 30.748 0 0 0-6.479-10.055c-2.821-2.935-6.205-5.567-10.149-7.898-3.945-2.33-8.394-4.531-13.347-6.602-3.628-1.497-6.881-2.949-9.761-4.359-2.879-1.41-5.327-2.848-7.342-4.316-2.016-1.467-3.571-3.021-4.665-4.661-1.094-1.64-1.641-3.495-1.641-5.567 0-1.899.489-3.61 1.468-5.135s2.362-2.834 4.147-3.927c1.785-1.094 3.973-1.942 6.565-2.547 2.591-.604 5.471-.906 8.638-.906 2.304 0 4.737.173 7.299.518 2.563.345 5.14.877 7.732 1.597a53.669 53.669 0 0 1 7.558 2.719 41.7 41.7 0 0 1 6.781 3.797v-25.807c-4.204-1.611-8.797-2.805-13.778-3.582-4.981-.777-10.697-1.165-17.147-1.165-6.565 0-12.784.705-18.658 2.115-5.874 1.409-11.043 3.61-15.506 6.602-4.463 2.993-7.99 6.805-10.582 11.437-2.591 4.632-3.887 10.17-3.887 16.615 0 8.228 2.375 15.248 7.127 21.06 4.751 5.811 11.963 10.731 21.638 14.759a291.458 291.458 0 0 1 10.625 4.575c3.283 1.496 6.119 3.049 8.509 4.66 2.39 1.611 4.276 3.366 5.658 5.265 1.382 1.899 2.073 4.057 2.073 6.474a9.901 9.901 0 0 1-1.296 4.963c-.863 1.524-2.174 2.848-3.93 3.97-1.756 1.122-3.945 1.999-6.565 2.632-2.62.633-5.687.95-9.2.95-5.989 0-11.92-1.05-17.794-3.151-5.875-2.1-11.317-5.25-16.327-9.451Zm-46.036-68.733H140V109H41v22.742h35.345V233h28.137V131.742Z"
+                            fill="#FFF" />
+                    </svg>
+                    <p>TypeScript</p>
+                </div>
+
+                <div class="skills_logo_tec">
+
+                    <svg viewBox="0 0 256 154" width="156" height="154" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid">
+                        <defs>
+                            <linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="gradient">
+                                <stop stop-color="#2298BD" offset="0%"></stop>
+                                <stop stop-color="#0ED7B5" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path
+                            d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z"
+                            fill="url(#gradient)"></path>
+                    </svg>
+                    <p>tailwindcss</p>
+
+                </div>
+
+                <div class="skills_logo_tec">
+
+                    <svg viewBox="0 0 256 228" width="136" height="228" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid">
+                        <path
+                            d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621 6.238-30.281 2.16-54.676-11.769-62.708-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848 155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233 50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165 167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266 13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923 168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586 13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488 29.348-9.723 48.443-25.443 48.443-41.52 0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345-3.24-10.257-7.612-21.163-12.963-32.432 5.106-11 9.31-21.767 12.459-31.957 2.619.758 5.16 1.557 7.61 2.4 23.69 8.156 38.14 20.213 38.14 29.504 0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787-1.524 8.219-4.59 13.698-8.382 15.893-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246 12.376-1.098 24.068-2.894 34.671-5.345.522 2.107.986 4.173 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994 7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863-6.35-5.437-9.555-10.836-9.555-15.216 0-9.322 13.897-21.212 37.076-29.293 2.813-.98 5.757-1.905 8.812-2.773 3.204 10.42 7.406 21.315 12.477 32.332-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789 8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152 7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793 2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433 4.902.192 9.899.29 14.978.29 5.218 0 10.376-.117 15.453-.343-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026 347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815 329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627 310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695 358.489 358.489 0 0 1 11.036 20.54 329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026-.344 1.668-.73 3.367-1.15 5.09-10.622-2.452-22.155-4.275-34.23-5.408-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86-22.86-10.235-22.86-22.86 10.235-22.86 22.86-22.86Z"
+                            fill="#00D8FF"></path>
+                    </svg>
+                    <p>ReactJS</p>
+
+                </div>
+
+                <div class="skills_logo_tec">
+
+                    <svg viewBox="0 0 256 257" width="156" height="257" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid">
+                        <defs>
+                            <linearGradient x1="-.828%" y1="7.652%" x2="57.636%" y2="78.411%" id="a">
+                                <stop stop-color="#41D1FF" offset="0%"></stop>
+                                <stop stop-color="#BD34FE" offset="100%"></stop>
+                            </linearGradient>
+                            <linearGradient x1="43.376%" y1="2.242%" x2="50.316%" y2="89.03%" id="b">
+                                <stop stop-color="#FFEA83" offset="0%"></stop>
+                                <stop stop-color="#FFDD35" offset="8.333%"></stop>
+                                <stop stop-color="#FFA800" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path
+                            d="M255.153 37.938 134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"
+                            fill="url(#a)"></path>
+                        <path
+                            d="M185.432.063 96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028 72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"
+                            fill="url(#b)"></path>
+                    </svg>
+                    <p>vite</p>
+
+                </div>
+
+                <div class="skills_logo_tec">
+
+                    <svg width="54" height="80" viewBox="0 0 54 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_912_3)">
+                            <path
+                                d="M13.3333 80.0002C20.6933 80.0002 26.6667 74.0268 26.6667 66.6668V53.3335H13.3333C5.97333 53.3335 0 59.3068 0 66.6668C0 74.0268 5.97333 80.0002 13.3333 80.0002Z"
+                                fill="#0ACF83"></path>
+                            <path
+                                d="M0 39.9998C0 32.6398 5.97333 26.6665 13.3333 26.6665H26.6667V53.3332H13.3333C5.97333 53.3332 0 47.3598 0 39.9998Z"
+                                fill="#A259FF"></path>
+                            <path
+                                d="M0 13.3333C0 5.97333 5.97333 0 13.3333 0H26.6667V26.6667H13.3333C5.97333 26.6667 0 20.6933 0 13.3333Z"
+                                fill="#F24E1E"></path>
+                            <path
+                                d="M26.6667 0H40.0001C47.3601 0 53.3334 5.97333 53.3334 13.3333C53.3334 20.6933 47.3601 26.6667 40.0001 26.6667H26.6667V0Z"
+                                fill="#FF7262"></path>
+                            <path
+                                d="M53.3334 39.9998C53.3334 47.3598 47.3601 53.3332 40.0001 53.3332C32.6401 53.3332 26.6667 47.3598 26.6667 39.9998C26.6667 32.6398 32.6401 26.6665 40.0001 26.6665C47.3601 26.6665 53.3334 32.6398 53.3334 39.9998Z"
+                                fill="#1ABCFE"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_912_3">
+                                <rect width="53.3333" height="80" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p>Figma</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="projects" class="projects">
+
+            <div class="projects_titulo">
+                <h2 class="secciones">Proyectos</h2>
+            </div>
+
+            <article class="project">
+                <img src="./assets/imgs/guitarLA.jpg" alt=" Captura de pantalla del proyecto: Guitar LA"
+                    class="project_image">
+                <div class="project_info">
+                    <h3>Guitar LA</h3>
+                    <ul class="project_tags">
+                        <li class="tag">
+                            <img src="./assets/icons/react.svg" alt="tag react" class="tag_icon">
+                            ReactJS
+                        </li>
+                        <li class="tag">
+                            <img src="./assets/icons/tailwindcss.svg" alt="tag tailwindcss" class="tag_icon">
+                            tailwindcss
+                        </li>
+                        <li class="tag">
+                            <img src="./assets/icons/typescript.svg" alt="tag typescript" class="tag_icon">
+                            typescript
+                        </li>
+                    </ul>
+                    <p>Esta es una página web para una tienda de guitarras, desarrollada con React.js y TypeScript, con
+                        estilos personalizados creados utilizando Tailwind CSS.</p>
+                    <div class="project_links">
+                        <a href="https://guitar-store-orpin.vercel.app/" target="_blank">Ver Proyecto</a>
+                        <a href="https://github.com/Migeuskz/Guitar-Store-" target="_blank">Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project">
+                <img src="./assets/imgs/calculadora.jpg"
+                    alt=" Captura de pantalla del proyecto: Calculadora de propinas" class="project_image">
+                <div class="project_info">
+                    <h3>Calculadora de propinas</h3>
+                    <ul class="project_tags">
+                        <li class="tag">
+                            <img src="./assets/icons/react.svg" alt="tag react" class="tag_icon">
+                            ReactJS
+                        </li>
+                        <li class="tag">
+                            <img src="./assets/icons/tailwindcss.svg" alt="tag tailwindcss" class="tag_icon">
+                            tailwindcss
+                        </li>
+                        <li class="tag">
+                            <img src="./assets/icons/typescript.svg" alt="tag typescript" class="tag_icon">
+                            typescript
+                        </li>
+                    </ul>
+                    <p>Este proyecto es una calculadora de propinas desarrollada con React.js y TypeScript, con estilos
+                        personalizados utilizando Tailwind CSS.</p>
+                    <div class="project_links">
+                        <a href='https://calculadora-de-propinas-liard.vercel.app/' target="_blank">Ver Proyecto</a>
+                        <a href='https://github.com/Migeuskz/calculadora-de-propinas' target="_blank">Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project">
+                <img src="./assets/imgs/encriptador.jpg" alt=" Captura de pantalla del proyecto: 'Encriptador'"
+                    class="project_image">
+                <div class="project_info">
+                    <h3>Encriptador</h3>
+                    <ul class="project_tags">
+                        <li class="tag">
+                            <img src="./assets/icons/html5.svg" alt="tag html5" class="tag_icon">
+                            html5
+                        </li>
+                        <li class="tag">
+                            <img src="./assets/icons/css.svg" alt="tag css" class="tag_icon">
+                            css
+                        </li>
+                        <li class="tag">
+                            <img src="./assets/icons/javascript.svg" alt="tag javascript" class="tag_icon">
+                            javascript
+                        </li>
+                    </ul>
+                    <p>'Este es un encriptador de mensajes hecho con HTML, CSS y JavaScript, para el challenge de Alura
+                        Latam: "Encriptador de texto".'</p>
+                    <div class="project_links">
+                        <a href='https://encriptador-sepia.vercel.app/' target="_blank">Ver Proyecto</a>
+                        <a href='https://github.com/Migeuskz/Encriptador' target="_blank">Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project">
+                <img src="./assets/imgs/clima.jpg" alt=" Captura de pantalla del proyecto: AppWeather"
+                    class="project_image">
+                <div class="project_info">
+                    <h3>AppWeather</h3>
+                    <ul class="project_tags">
+                        <li class="tag">
+                            <img src="./assets/icons/html5.svg" alt="tag html5" class="tag_icon">
+                            html5
+                        </li>
+                        <li class="tag">
+                            <img src="./assets/icons/css.svg" alt="tag css" class="tag_icon">
+                            css
+                        </li>
+                        <li class="tag">
+                            <img src="./assets/icons/javascript.svg" alt="tag javascript" class="tag_icon">
+                            javascript
+                        </li>
+                    </ul>
+                    <p>'Una aplicación para consultar el clima desde una API, hecha con HTML, CSS y JavaScript, con
+                        buscador de ciudad, y cambio de fondo interactivo.'</p>
+                    <div class="project_links">
+                        <a href='https://migeuskz.github.io/AppWeather/' target="_blank">Ver Proyecto</a>
+                        <a href='https://github.com/Migeuskz/AppWeather' target="_blank">Code</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+
+            <!-- <iframe src='https://my.spline.design/cursorfollowingrobotforlandingpage-7b049f0cd48a2fd9676658a80f8aedf5/'
+                frameborder='0' class="robot_contact"></iframe> -->
+
+            <iframe src='https://my.spline.design/contactprueba-41d6fc5d2251703aac7f16a5dbe31e53/' frameborder='0'
+                class="robot_contact"></iframe>
+
+            <div class="contact_container">
+                <h3>Contacto</h3>
+                <p> 
+                    <span>¿Quieres ponerte en contacto conmigo?</span>
+                    Haz clic en el siguiente enlace a continuación y me pondré en contacto contigo lo más pronto posible.
+                </p>
+                <li><a href="mailto:msanchezpapalotzi@gmail.com" class="enviar">Contacto</a></li>
+            </div>
+
+            <iframe src='https://my.spline.design/contactpruebapeque-2a732a1e21626b159e71177d5e655ce6/' frameborder='0' class='robot_contact_mobile''></iframe>
+            <!-- <form action="#" method="post">
+
+                    <h3>Contacto</h3>
+                    <p> <span>¿Quieres ponerte en contacto conmigo?</span>
+                        Completa el formulario a continuación y me pondré en contacto contigo lo más pronto posible.</p>
+                
+                    <div class="contact_form">
+                
+                        <span id="error-name" class="error-message"></span>
+                        <div class="input_group">
+                            <input type="text" name="name" id="name" class="input" placeholder=" " required>
+                            <label for="name" class="label_dinamic">Nombre</label>
+                        </div>
+                
+                        <span id="error-email" class="error-message"></span>
+                        <div class="input_group">
+                            <input type="email" name="email" id="email" class="input" placeholder=" " required>
+                            <label for="email" class="label_dinamic">E-mail</label>
+                        </div>
+                
+                        <span id="error-asunto" class="error-message"></span>
+                        <div class="input_group">
+                            <input type="text" name="asunto" id="asunto" class="input" placeholder=" " required>
+                            <label for="asunto" class="label_dinamic">Asunto</label>
+                        </div>
+                
+                        <span id="error-message" class="error-message"></span>
+                        <div class="input_group_message">
+                            <label for="message" class="label">Mensaje</label>
+                            <textarea class="mensaje__texto" name="message" id="message" placeholder=" "></textarea>
+                        </div>
+                
+                        <input type="submit" value="Enviar mensaje" class="enviar" disabled>
+                
+                    </div>
+                
+                </form> -->
+
+
+        </section>
+
+    </main>
+    <footer>
+        <h3>
+            &copy; 2024 Todos los derechos reservados: Miguel Angel Sanchez
+            Papalotzi
+        </h3>
+    </footer>
+
 </body>
+
 </html>

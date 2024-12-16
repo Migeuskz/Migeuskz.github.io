@@ -1,0 +1,488 @@
+/* Media querys */
+
+/* Celulares tablet */
+@media (max-width:834px) {
+
+    h1,
+    h2,
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 4rem; */
+        /* gap: 8rem; */
+        margin-top: 2rem;
+    }
+
+    /* Navbar */
+
+    .content_navbar {
+        padding: .8rem;
+        /* background-color: var(--bg-2); */
+        top: 0;
+    }
+
+    .logo_celphone {
+        width: 4.8rem;
+    }
+
+
+    .content_navbar a {
+        display: none;
+    }
+
+    /* Inicio */
+
+    .inicio {
+        flex-direction: column;
+        width: 36rem;
+        align-items: center;
+        height: 66rem;
+        /* border: solid red 3px; */
+    }
+
+    .robot_name {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .inicio_info p {
+        font-size: 1.4rem;
+        text-align: center;
+        padding-top: 1.6rem;
+    }
+
+    .inicio_botones {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2.8rem;
+
+    }
+
+    .robot {
+        display: none;
+    }
+
+    .robot_mobile {
+        display: block;
+        height: 28rem;
+        /* border: solid red 3px; */
+    }
+
+    /* About Me */
+    .aboutMe {
+        justify-content: center;
+        align-items: center;
+        height: 60rem;
+        width: 36rem;
+        flex-direction: column-reverse;
+        /* margin-top: 3rem; */
+    }
+
+    .aboutMe_info h2 {
+        font-size: 2.2rem;
+        padding-left: 1rem;
+    }
+
+    .aboutMe_info p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+
+    .aboutMe_foto {
+        display: none;
+    }
+
+    /* .aboutMe_foto {
+        height: 16rem;
+        width: 12rem;
+        border-radius: 1.8rem;
+    } */
+
+    .aboutMe_foto_cellphone {
+        /* border: solid red 3px; */
+        /* display: block; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutMe_foto_cellphone img {
+        width: 12rem;
+        height: 14rem;
+        border-radius: 1.8rem;
+
+    }
+
+    .about_botones{flex-direction: column;}
+
+    /* Skills */
+
+    .skills {
+        margin-top: 18rem;
+    }
+
+    .skills_logo {
+        justify-content: center;
+        /* Centra las filas */
+        gap: 1rem;
+        /* Reduce el espacio entre elementos */
+    }
+
+    .skills_logo_tec {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .skills_logo_tec p {
+        font-size: 1rem;
+    }
+
+    /* Proyectos */
+
+    .project {
+        /* border: green 3px solid; */
+        flex-direction: column;
+        width: 19rem;
+        height: 52rem;
+        box-shadow: .4rem .6rem 2.8rem var(--blue2);
+    }
+
+    .project_image {
+        width: 19rem;
+        height: 14rem;
+        border-radius: 1.2rem;
+    }
+
+    .project_info h3 {
+        font-size: 1.8rem;
+        padding: 1.2rem;
+    }
+
+    .project p {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    .project_tags {
+        width: 19rem;
+        height: 4rem;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .tag {
+        font-size: 1rem;
+        width: 8rem;
+        /* background-color: #227B94; */
+    }
+
+    .tag img {
+        width: 1.2rem;
+    }
+
+    .project_links {
+        align-items: center;
+        flex-direction: column;
+        grid-area: .6rem;
+    }
+
+    /* Contact */
+    .contact {
+        width: 100%;
+        height: 50rem;
+        /* border: solid green 3px; */
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1rem;
+    }
+
+    .contact h3 {
+        font-size: 2.8rem;
+    }
+
+    .contact_container {
+        align-items: center;
+        padding: 1rem;
+        /* border: solid green 3px; */
+        width: 100%;
+    }
+
+    .contact_containert p {
+        border: yellow 3px solid;
+        font-size: 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        /* background-color: aqua; */
+    }
+
+    /* .contact p {
+        font-size: 1.6rem;
+        width: 28rem;
+        margin-bottom: 2rem;
+    } */
+
+    .enviar {
+        background-color: aqua;
+    }
+
+    .contact_container li {
+        /* background-color: aqua; */
+        width: 100%;
+    }
+
+    .contact p {
+        font-size: 1.6rem;
+        width: 24rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact form {
+        height: 40rem;
+        width: 100%;
+        gap: 1.2rem;
+    }
+
+    .contact_form {
+        margin-top: 3rem;
+    }
+
+    .input {
+        font-size: 1.6rem;
+        border-bottom: solid 2px var(--blue2);
+    }
+
+    .input:focus-visible {
+        border: none;
+    }
+
+    .mensaje__texto {
+        border-bottom: solid 2px var(--blue2);
+        font-size: 1.6rem;
+        height: 11rem;
+    }
+
+    .robot_contact {
+        display: none;
+    }
+
+    .robot_contact_mobile {
+        display: block;
+        /* border: yellow 3px solid; */
+        height: 40rem;
+        width: 100%;
+        pointer-events: none;
+        padding-left: 3rem;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+    }
+
+    footer h3 {
+        font-size: 1.6rem;
+        font-family: var(--description);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .logo_celphone {
+        display: block;
+    }
+
+    .logo_desktop {
+        display: none;
+    }
+
+
+
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .inicio {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 40rem;
+        gap: 1rem;
+    }
+
+    /* .robot_mobile{
+        }
+        
+        .inicio_info{
+            } */
+
+    .aboutMe {
+        width: 100%;
+        flex-direction: row;
+        gap: 1.4rem;
+        margin-top: 0;
+        padding: 1.6rem;
+    }
+    
+    .aboutMe_foto {
+        display: block;
+        width: 38%;
+        height: 28rem;
+    }
+    
+    .aboutMe_foto_cellphone {
+        display: none;
+    }
+    
+    .aboutMe_info {
+        /* border: solid blue 3px; */
+        width: 50%;
+    }
+    
+    .aboutMe_info p {
+        text-align: start;
+    }
+    
+    .about_botones{flex-direction: row;}
+    
+    .skills{
+        margin-top: 12rem;
+    }
+    
+    .skills_logo_tec {
+        height: 10.8rem;
+        width: 10.8rem;
+        display: flex;
+    }
+    
+    .skills_logo_tec p {
+        font-size: 1.8rem;
+        color: var(--yellow1);
+        text-align: center;
+    }
+    
+    .skills_logo svg,
+    .logo_js {
+        height: 12rem;
+        width: 12rem;
+        padding: 1rem;
+    }
+    
+    .projects{
+        width: 90%;
+        margin-top: 14rem;
+    }
+    .project{
+        width: 100%;
+        flex-direction: row;
+        height: 20rem;
+        gap: 1rem;
+    }
+    
+    .project_image {
+        width: 22rem;
+        height: 20rem;
+        border-radius: 1.2rem;
+    }
+    
+    .project_info{
+        width: 16rem;
+    }
+    
+    .project_info h3 {
+        font-size: 1.6rem;
+        /* padding: .6rem; */
+        padding: .4rem;
+    }
+    
+    
+    .project_info p {
+        width: 100%;
+        font-size: 1rem;
+        /* padding: .8rem; */
+    }
+    
+    .project_tags {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: .8rem;
+    }
+    
+    .tag {
+        flex-direction: row;
+        font-size: .6rem;
+        /* font-weight: 600; */
+        width: 6rem;
+        /* gap: .8rem; */
+        /* background-color: #227B94; */
+    }
+    
+    .tag img {
+        width: 1.2rem;
+    }
+
+    .project_links {
+        display: flex;
+        padding-top: 0;
+        /* padding: 1.8rem; */
+        gap: .6rem;
+        flex-direction: row;
+        height: 5rem;
+        /* width: 100%; */
+    }
+    
+    .project_links a{
+        text-align: center;
+        justify-content: center;
+        font-size: 1rem;
+        width: 12rem;
+        /* height: 18rem; */
+    }
+    
+    .contact{
+        width: 90%;
+        /* border: solid green 3px; */
+        flex-direction: row-reverse;
+        margin-top: 0;
+    }
+    
+    
+    
+    .contact h3 {
+        font-size: 2rem;
+        /* padding-left: 1rem; */
+    }
+    
+    .contact span {
+        font-family: var(--title);
+    }
+    
+    .contact_container p {
+        /* width: 100%; */
+        font-size: 1.4rem;
+    }
+    
+    .contact_container{
+        /* border: solid blue 3px; */
+        width: 48%;
+        gap: 0;
+        padding: 0;
+    }
+
+    .robot_contact_mobile{
+        /* border: solid red 3px; */
+        width: 50%;
+        /* padding: 0; */
+        pointer-events:all;
+    }
+}
+
+/* Desktop */
+@media (min-width:1440px) {}

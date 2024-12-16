@@ -1,0 +1,581 @@
+/* General Reset and Variables */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-1: #021d2d;
+    --bg-2: #021526;
+    --bg-3: #16325B;
+    --blue1: #227B94;
+    --blue2: #78B7D0;
+    --yellow1: #FFDC7F;
+    --yellow2: #E2E2B6;
+    --text1: #fffefb;
+    --text2: #000000;
+    --title: "Archivo Black", sans-serif;
+    --description: "Maven Pro", sans-serif;
+}
+
+body {
+    background-color: var(--bg-1);
+    overflow-x: hidden;
+    font-family: var(--description);
+}
+
+/* Titles and Text */
+h1 {
+    font-size: 4.2rem;
+    font-family: var(--title);
+    color: var(--yellow1);
+}
+
+h2,
+h3 {
+    font-family: var(--title);
+    font-size: 2.8rem;
+    color: var(--yellow1);
+}
+
+p {
+    color: var(--yellow2);
+    font-size: 2.4rem;
+    padding-top: .8rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8rem;
+    /* Altura del header */
+    z-index: 1000;
+}
+
+main {
+    /* border: solid red 3px; */
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+section {
+    scroll-margin-top: 8rem;
+    /* La misma altura que tu header */
+}
+
+
+/* Navbar */
+.content_navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+    /* Fondo transparente */
+    z-index: 100;
+    /* background-color: var(--bg-2); */
+}
+
+.content_navbar.scrolled {
+    background-color: var(--bg-2);
+    /* Fondo cuando haces scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra para el efecto */
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 3.2rem;
+    /* width: 60%; */
+    list-style: none;
+    padding-right: 2rem;
+    /* border: solid red 3px; */
+}
+
+.navbar a {
+    color: var(--yellow2);
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-bottom: .2rem solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.navbar a:hover {
+    border-bottom-color: var(--yellow2);
+}
+
+.logo_desktop {
+    width: 21rem;
+    /* border: solid yellow 3px; */
+}
+
+.logo_celphone {
+    display: none;
+}
+
+.content_navbar button {
+    border: none;
+    background-color: var(--blue1);
+    border-radius: 2.4rem;
+    color: var(--text1);
+    font-size: 1.8rem;
+    font-weight: 600;
+    height: 3.8rem;
+    width: 18rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.content_navbar button:hover {
+    background-color: var(--blue2);
+}
+
+/* Sections */
+
+.secciones {
+    color: var(--yellow2);
+    font-size: 3.6rem;
+}
+
+
+
+/* Inicio */
+.inicio {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 2rem;
+    gap: 4rem;
+}
+
+.inicio_info {
+    width: 70%;
+    padding: 1rem;
+    /* border: green 3px solid; */
+}
+
+.inicio_info p {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+
+.robot_name {
+    font-size: 2.8rem;
+}
+
+.inicio_botones {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 1.8rem; */
+    /* border: solid red 3px; */
+    width: 90%;
+}
+
+.robot {
+    width: 50%;
+    height: 100%;
+}
+
+.robot_mobile {
+    display: none;
+}
+
+.gitHub,
+.linkedIn,
+.project_links a {
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    height: 3.4rem;
+    width: 18rem;
+    /* padding: .8rem; */
+    color: var(--text1);
+    transition: ease .2s;
+}
+
+.gitHub {
+    background: linear-gradient(to right, var(--blue2), var(--yellow1));
+    color: var(--bg-3);
+}
+
+.linkedIn {
+    background-color: var(--blue2);
+}
+
+.linkedIn:hover,
+.project_links a:hover {
+    background-color: var(--bg-3);
+}
+
+/* About Me */
+.aboutMe {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
+    margin-top: 10rem;
+}
+
+.aboutMe_foto {
+    height: 38rem;
+    border-radius: 1.8rem;
+}
+
+.aboutMe_foto_cellphone {
+    display: none;
+}
+
+
+.aboutMe_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 50%;
+}
+
+.aboutMe_info p {
+    font-size: 1.6rem;
+}
+
+.about_botones{
+    display: flex;
+    gap: 1rem;
+}
+
+/* Skills */
+.skills {
+    /* border: solid red 3px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    /* width: 80%; */
+    height: 17.4rem;
+    margin-top: 21rem;
+}
+
+.skills_logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* width: 80%; */
+    gap: 1.8rem;
+    padding: 4rem 1rem;
+}
+
+.skills_logo_tec {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid blue 3px; */
+}
+
+.skills_logo_tec p {
+    margin-top: 0.4rem;
+    /* Espacio entre icono y texto */
+    font-size: 1.2rem;
+    color: var(--yellow1);
+    text-align: center;
+}
+
+.skills_logo svg,
+.logo_js {
+    height: 12rem;
+    width: 12rem;
+    padding: 1rem;
+}
+
+/* Projects */
+/* .projects{} */
+
+.projects {
+    /* border: solid red 3px; */
+    flex-direction: column;
+    gap: 5.2rem;
+    align-items: center;
+    /* margin-bottom: 4rem; */
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+.project_links {
+    display: flex;
+    padding: 1.8rem;
+}
+
+.projects_titulo {
+    width: 100%;
+    /* padding-left: 4rem; */
+    padding-bottom: 3rem;
+    /* border: green solid 3px; */
+}
+
+.project {
+    width: 70rem;
+    height: 20rem;
+    border-radius: 1.8rem;
+    display: flex;
+    gap: 1.8rem;
+    box-shadow: 1rem 1rem 1.8rem var(--blue1);
+    margin-bottom: 2.4rem;
+}
+
+.project_image {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 1.2rem;
+}
+
+.project_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project_info h3 {
+    font-size: 2.2rem;
+    padding: .6rem;
+}
+
+.project_tags {
+    display: flex;
+    gap: .8rem;
+}
+
+.project p {
+    font-size: 1.4rem;
+    padding: .8rem;
+}
+
+.tag {
+    align-items: center;
+    border-radius: 1.8rem;
+    color: var(--yellow1);
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 600;
+    justify-content: center;
+    width: 12rem;
+    list-style: none;
+    gap: .8rem;
+    /* background-color: #227B94; */
+}
+
+.tag img {
+    width: 1.8rem;
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    align-items: center;
+    /* border: solid green 3px; */
+    width: 70rem;
+    height: 36.9rem;
+    margin-top: 8rem;
+}
+
+.contact h3 {
+    font-size: 2.8rem;
+    /* padding-left: 1rem; */
+}
+
+.contact span {
+    font-family: var(--title);
+}
+
+.contact p {
+    font-size: 1.2rem;
+    width: 90%;
+    /* padding-left: 1rem; */
+    margin-bottom: 1rem;
+}
+
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 10rem; */
+
+}
+
+.contact_container p{
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.contact form {
+    width: 50%;
+    gap: 1rem;
+}
+
+.contact_form {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    margin-top: 1.8rem;
+}
+
+.input {
+    background-color: transparent;
+    width: 100%;
+    height: 2.6rem;
+    color: var(--yellow2);
+    font-size: 1.1rem;
+    padding-left: .4rem;
+    border-bottom: solid var(--blue2) 1px;
+}
+
+.input_group {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.6rem;
+}
+
+.label_dinamic {
+    position: absolute;
+    top: 50%;
+    left: .4rem;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--yellow2);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.label{
+    /* left: 1rem; */
+    font-size: 1.4rem;
+    color: var(--yellow2);
+    font-family: var(--title);
+    pointer-events: none;
+    padding-bottom: 1rem;
+}
+
+.input_group_message{
+    /* border: solid red 3px; */
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+}
+
+.input:focus+.label_dinamic,
+.input:not(:placeholder-shown)+.label_dinamic {
+    top: -0.8rem;
+    /* Sube el label */
+    font-size: 1.1rem;
+    /* Reduce el tamaño */
+    color: var(--yellow2);
+    /* Cambia el color */
+}
+
+
+.mensaje__texto {
+    padding-left: .4rem;
+    border: solid var(--blue2) 1px;
+    color: var(--yellow2);
+    font-size: 1.1rem;
+    width: 100%;
+    height: 6rem;
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+}
+
+.robot_contact {
+    /* padding-top: 29rem; */
+    /* position: relative; */
+    width: 50%;
+    height: 36.9rem;
+}
+
+.robot_contact_mobile{
+    display: none;
+}
+
+.enviar {
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 3.4rem;
+    width: 100%;
+    transition: ease .2s;
+    background: linear-gradient(to right, var(--blue2), var(--yellow1));
+    color: var(--bg-3);
+    cursor: pointer;
+}
+
+.enviar:disabled{
+    opacity: 0;
+}
+
+/* Errores */
+.error-message {
+    color: var(--yellow2);
+    font-family:  var(--description);
+    padding-bottom: 1rem;
+    /* border: solid green 3px; */
+    width:28rem;
+    font-size: 1rem;
+    display: none; /* Oculto por defecto */
+}
+
+.error-message.visible {
+    display: block; /* Mostrar cuando haya un error */
+}
+
+.contact_container{
+    width: 50%;
+}
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+footer h3 {
+    font-size: 1.6rem;
+    color: var(--yellow1);
+}
