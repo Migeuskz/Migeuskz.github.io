@@ -301,7 +301,7 @@
     }
 
     body{
-        border: solid red 3px;
+        /* border: solid red 3px; */
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -319,8 +319,30 @@
 
 
     .contact{
-        border: green 3px solid;
+        /* border: green 3px solid; */
         width: 52%;
+    }
+
+    .contact h3 {
+        font-size: 2.8rem;
+    }
+
+
+    .contact p {
+        /* border: yellow 3px solid; */
+        font-size: 1.4rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        /* background-color: aqua; */
+    }
+
+    .robot_contact_mobile {
+        display: block;
+        /* border: yellow 3px solid; */
+        height: 40rem;
+        width: 21rem;
+        pointer-events: none;
+        /* padding-left: 3rem; */
     }
 }
 
